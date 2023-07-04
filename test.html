@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="noindex,nofollow" />
+        <title>IT 161 Test Web Page</title>
+        <!--START Styles Here-->
+        <style>
+            img {
+                float:left;
+                margin:1em;
+                max-width:300px;
+            }
+            a {
+                color:black;
+            }
+            a:hover {
+                color:red;
+                background-color:yellow;
+                text-decoration:none;
+            }
+            footer {
+                clear:both;
+            }
+        </style>
+        <!--END Styles here-->
+    </head>
+    <body>
+        <header>
+            <h1>May Saetern's IT 161 Test Page</h1>
+            <nav>
+                <a href="https://www.w3.org/" target="_blank">The W3</a> | 
+                <a href="https://www.whatwg.org/" target="_blank">WHATWG Community</a> | 
+                <a href="https://www.w3schools.com" target="_blank">W3Schools</a> | 
+                <a href="https://www.linkedin.com/learning/login" target="_blank">Linkedin Learning Library</a>
+            </nav>
+        </header>
+            <img src="images/me.JPG" alt="Picture of May" />
+            <p>This is my first test web page for my IT161 class. I will be testing it in a live browser like Chrome or Firefox by clicking on the two validator links in the footer of this page.</p>
+        <footer>
+            <p><small>&copy; 2023 by May Saetern, All Rights Reserved ~ 
+            <a id="html-checker" href="#">Check HTML</a> ~ 
+            <a id="css-checker" href="#">Check CSS</a></small>
+           </p>
+        </footer>
+        <script>
+            //https://tinyurl.com/dynamic-html-checker
+            document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+              
+            document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);  
+          </script>
+    </body>
+</html>
