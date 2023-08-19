@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>May's Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/template.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <style type="text/css">
+    table {border: 0px solid #bae1ff; 
+        width: 80%;
+        border-collapse:collapse;
+        margin:auto;
+        background-color:#fff;
+    }
+    tr {
+        vertical-align:top;
+    }    
+    td, th {border: 0px solid #bae1ff; padding:10px; text-align: center;}
+    
+    .shows td {width:33%;}
+    .shows th {font-size:1.25em;}
+    .clientinfo th {font-size: 1.15em; text-align:right;}
+            
+</style>
+</head>
+
+<header>
+  <div class="page-header">
+    <h1><a href="index.html">DANNY THUNDER ⚡</a></h1>
+  </div>
+
+  <nav class="topnav" id="myTopnav">
+    <a href="index.html">Home</a>
+    <a href="music.html">Music</a>
+    <a href="shows.html">Shows</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  </nav>
+</header>
+
+<body>
+<main class="wrapper">
+
+<h1 class="body-header">Shows</h1>
+
+    <table class="shows">
+        <tr>
+            <th>DATE</th>
+            <th>SHOW</th>
+            <th>LOCATION</th>
+        </tr>
+        <tr>
+            <td>12/31/2021</td>
+            <td>COUNTDOWN</td>
+            <td>SZN, Seattle, WA</td>
+        </tr>
+        <tr>
+            <td>5/5/2022</td>
+            <td>Cinco de Mayo</td>
+            <td>Fresa, Everett, WA</td>
+        </tr>
+        <tr>
+            <td>5/5/2023</td>
+            <td>DALÉ</td>
+            <td>SZN, Seattle, WA</td>
+        </tr>
+        <tr>
+            <td>7/15/2023</td>
+            <td>Only by AM - Grand Opening</td>
+            <td>Only by AM, Seattle, WA</td>
+        </tr>
+        <tr>
+            <td>8/26/2023</td>
+            <td>CID Block Party - VIP</td>
+            <td>Seattle, WA</td>
+        </tr>
+    </table>
+
+
+<div class="footer">
+  <p><small>&copy; 2023 by May Saetern, All Rights Reserved ~ <a id="html-checker" href="#" target="_blank">Check HTML</a> ~ <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
+  </p>
+</div>
+
+<script>
+  //https://tinyurl.com/dynamic-html-checker
+  document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+    
+  document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);  
+</script>
+
+<script>
+  function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+      } else {
+          x.className = "topnav";
+      }
+  }
+  </script>
+
+</main>
+</body>
+</html>
